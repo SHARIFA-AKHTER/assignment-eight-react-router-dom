@@ -15,7 +15,7 @@ const GadgetDetail = () => {
         product_title,price,description,specification,rating} = gadget;
 
         const handleMarkAsCard = (id) =>{
-           addToStoredGadgetList(id);
+           addToStoredGadgetList(id)
         }
 
     return (

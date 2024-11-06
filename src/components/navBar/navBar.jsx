@@ -6,7 +6,7 @@ const Navbar = () => {
     const links = <>
      <li><NavLink to={"/"}>Home</NavLink></li>
      <li><NavLink to={"/statistics"}>Statistics</NavLink></li>
-     <li><NavLink to={"/dashboard"}> Dashboard</NavLink></li>
+     <li><NavLink to={"/listedGadgets"}> Dashboard</NavLink></li>
 
      <div> 
      <li className='gap-8 ml-4'>
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <i class="fa-solid fa-heart"></i></span>
         </NavLink>
      
-        
+         
      </li>
      </div>
     </>

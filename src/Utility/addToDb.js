@@ -25,4 +25,4 @@ const addToStoredGadgetList = (id) => {
     }
 };
 
-export { addToStoredGadgetList }
+export { addToStoredGadgetList,getStoredGadgetList }

@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import GadgetDetail from './components/GadgetDetail/GadgetDetail';
 import Statistics from './components/Statistics/Statistics';
+import ListedGadgets from './components/ListedGadgets/ListedGadgets';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element:<Dashboard></Dashboard>
+      },
+      {
+        path:'listedGadgets',
+        element:<ListedGadgets></ListedGadgets>
       },
       {
         path: '/statistics',
