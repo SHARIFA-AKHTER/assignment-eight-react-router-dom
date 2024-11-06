@@ -14,26 +14,25 @@ const ListedGadgets = () => {
         const storedGadgetListInt = storedGadgetList.map(id => parseInt(id))
 
        
-        //  const gadgetProductList = allGadgets.filter(
-        //      gadget => storedGadgetListInt.includes(gadget.product_id)
-        //  );    
+    // const productGadgetList=allGadgets.filter(gadget =>storedGadgetListInt.includes(gadget.product_id));    
 
         console.log(storedGadgetList, allGadgets, storedGadgetListInt)
 
-        setGadgetList(gadgetList);
+        setGadgetList(storedGadgetList);
 
     },[])
     return (
         
         <div>
-              <h3 className="text-3xl my-8 ml-44 mt-20">Cart</h3>  
+              <h3 className="text-3xl my-8 ml-44 mt-10">Cart</h3>  
             <Tabs>
  <div className='flex justify-end mr-12'>
 
  <TabList>
     <h3 className='flex justify-between '>Total Cost:</h3>
-      <Tab>Sort by Price</Tab>
-      <Tab>Purchase</Tab>
+
+      <Tab><button className='btn text-[#9538E2] outline'>Sort by Price</button></Tab>
+      <Tab><button className='btn  bg-[#8332C5] text-white'>Purchase</button></Tab>
     </TabList>
  </div>
 
