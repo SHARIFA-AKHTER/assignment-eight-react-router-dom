@@ -14,12 +14,9 @@ const ListedGadgets = () => {
         const storedGadgetListInt = storedGadgetList.map(id => parseInt(id))
 
        
-        // const gadgetProductList = allGadgets.filter(
-        //     gadget => storedGadgetListInt.includes(gadget.product_id)
-        // );
-
-        const  gadgetProductList = allGadgets.filter(
-            gadget =>  storedGadgetListInt.includes(gadget.product_id));
+        //  const gadgetProductList = allGadgets.filter(
+        //      gadget => storedGadgetListInt.includes(gadget.product_id)
+        //  );    
 
         console.log(storedGadgetList, allGadgets, storedGadgetListInt)
 
@@ -27,18 +24,22 @@ const ListedGadgets = () => {
 
     },[])
     return (
+        
         <div>
-            
-            <h3 className="text-3xl my-8">Listed Gadgets</h3>
-
+              <h3 className="text-3xl my-8 ml-44 mt-20">Cart</h3>  
             <Tabs>
-    <TabList>
-      <Tab>Gadget List</Tab>
-      <Tab>Product List</Tab>
+ <div className='flex justify-end mr-12'>
+
+ <TabList>
+    <h3 className='flex justify-between '>Total Cost:</h3>
+      <Tab>Sort by Price</Tab>
+      <Tab>Purchase</Tab>
     </TabList>
+ </div>
 
     <TabPanel>
-      <h2 className='text-2xl'>Gadget I Feel: {gadgetList.length}</h2>
+     
+      <h2 className='text-2xl'> {gadgetList.length}</h2>
       {
         gadgetList.map(gadget => <Gadget key={gadget.product_id} gadget={gadget}>
 
@@ -46,7 +47,7 @@ const ListedGadgets = () => {
       }
     </TabPanel>
     <TabPanel>
-      <h2 className='text-2xl'>My Product list</h2>
+      <h2 className='text-2xl'></h2>
     </TabPanel>
   </Tabs>
         </div>
