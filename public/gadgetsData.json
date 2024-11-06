@@ -1,0 +1,173 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "Apple MacBook Pro",
+      "product_image": "https://i.ibb.co.com/C5gZcQp/51-OHRon5qe-L-AC-UF1000-1000-QL80.jpg",
+      "category": "Computers",
+      "price": 1299,
+      "description": "The Apple MacBook Pro features an M1 chip, delivering exceptional performance and battery life.",
+      "specification": [
+        "13-inch Retina display",
+        "8GB RAM",
+        "256GB SSD",
+        "Apple M1 chip"
+      ],
+      "availability": true,
+      "rating": 4.8,
+      "color": "Space Gray"
+    },
+    {
+      "product_id": 2,
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/HCM2TcR/images.jpg",
+      "category": "Computers",
+      "price": 999,
+      "description": "Dell XPS 13 with Intel i7 processor and InfinityEdge display, perfect for multitasking.",
+      "specification": [
+        "13.4-inch FHD+ display",
+        "16GB RAM",
+        "512GB SSD",
+        "Intel i7 11th Gen"
+      ],
+      "availability": true,
+      "rating": 4.7,
+      "color": "Silver"
+    },
+    {
+      "product_id": 3,
+      "product_title": "Samsung Galaxy S21",
+      "product_image": "https://i.ibb.co.com/tsBpx4b/Samsung-Galaxys215g.jpg",
+      "category": "Phones",
+      "price": 799,
+      "description": "The Samsung Galaxy S21 comes with a high-quality camera, powerful processor, and long-lasting battery.",
+      "specification": [
+        "6.2-inch Dynamic AMOLED display",
+        "8GB RAM",
+        "128GB storage",
+        "Exynos 2100 chipset"
+      ],
+      "availability": true,
+      "rating": 4.6,
+      "color": "Phantom Gray"
+    },
+    {
+      "product_id": 4,
+      "product_title": "Apple Watch Series 6",
+      "product_image": "https://i.ibb.co.com/Y7408fV/four.jpg",
+      "category": "Smart Watches",
+      "price": 399,
+      "description": "The Apple Watch Series 6 has a blood oxygen sensor, ECG capabilities, and always-on retina display.",
+      "specification": [
+        "1.78-inch Retina display",
+        "S6 SiP with 64-bit dual-core processor",
+        "GPS + Cellular",
+        "Blood oxygen and ECG app"
+      ],
+      "availability": false,
+      "rating": 4.7,
+      "color": "Red"
+    },
+    {
+      "product_id": 5,
+      "product_title": "Anker PowerCore 20100",
+      "product_image": "https://i.ibb.co.com/7tVCnc6/five.jpg",
+      "category": "Power Banks",
+      "price": 49.99,
+      "description": "The Anker PowerCore 20100 is a high-capacity power bank, ideal for charging multiple devices.",
+      "specification": [
+        "20100mAh capacity",
+        "Dual USB output",
+        "High-speed charging",
+        "Ultra-compact design"
+      ],
+      "availability": true,
+      "rating": 4.5,
+      "color": "Black"
+    },
+    {
+      "product_id": 6,
+      "product_title": "Sony WH-1000XM4",
+      "product_image": "https://i.ibb.co.com/Pt5vCBL/six.jpg",
+      "category": "Headphones",
+      "price": 349.99,
+      "description": "The Sony WH-1000XM4 offers industry-leading noise-canceling technology and long battery life.",
+      "specification": [
+        "Wireless over-ear headphones",
+        "Noise cancellation",
+        "Up to 30 hours battery life",
+        "Touch sensor controls"
+      ],
+      "availability": true,
+      "rating": 4.9,
+      "color": "Silver"
+    },
+    {
+      "product_id": 7,
+      "product_title": "Apple iPhone 12",
+      "product_image": "https://i.ibb.co.com/GnHbDqs/seven.jpg",
+      "category": "Phones",
+      "price": 999,
+      "description": "The iPhone 12 features 5G support, an A14 Bionic chip, and dual-camera system.",
+      "specification": [
+        "6.1-inch Super Retina XDR display",
+        "64GB, 128GB, 256GB storage options",
+        "Dual 12MP camera system",
+        "5G capable"
+      ],
+      "availability": true,
+      "rating": 4.8,
+      "color": "Blue"
+    },
+    {
+      "product_id": 8,
+      "product_title": "Samsung Galaxy Watch 4",
+      "product_image": "https://i.ibb.co.com/Cw6sG37/eight.jpg",
+      "category": "Smart Watches",
+      "price": 249,
+      "description": "The Galaxy Watch 4 offers advanced health tracking and seamless integration with Android devices.",
+      "specification": [
+        "1.4-inch Super AMOLED display",
+        "GPS + Cellular",
+        "Blood oxygen and ECG app",
+        "40mm case size"
+      ],
+      "availability": true,
+      "rating": 4.6,
+      "color": "Black"
+    },
+    {
+      "product_id": 9,
+      "product_title": "Google Pixel 5",
+      "product_image": "https://i.ibb.co.com/LY0F0qp/nine.jpg",
+      "category": "Phones",
+      "price": 699,
+      "description": "The Google Pixel 5 provides a top-notch camera and a clean Android experience.",
+      "specification": [
+        "6.0-inch OLED display",
+        "8GB RAM",
+        "128GB storage",
+        "Snapdragon 765G chipset"
+      ],
+      "availability": true,
+      "rating": 4.5,
+      "color": "Sorta Sage"
+    },
+    {
+      "product_id": 10,
+      "product_title": "iPhone 16 Pro Max",
+      "product_image": "https://i.ibb.co.com/mqHhV7Q/images-3.jpg",
+      "category": "iPhone", 
+      "price": 1099,
+      "description": "The iPhone 16 Pro Max features advanced camera technology, a stunning display, and powerful performance.",
+      "specification": [
+        "6.7-inch Super Retina XDR display",
+        "128GB, 256GB, 512GB storage options",
+        "A16 Bionic chip",
+        "5G capable"
+      ],
+      "availability": true,
+      "rating": 4.5,
+      "color": "Space Black"
+    }
+  ]
+  
