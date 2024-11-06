@@ -20,6 +20,8 @@ const Navbar = () => {
      </li>
      </div>
     </>
+
+    
     return (
         <div className="navbar bg-[#9538E2] w-[1540px]  h-[110px]
         flex justify-center items-center mx-auto p-8 ">

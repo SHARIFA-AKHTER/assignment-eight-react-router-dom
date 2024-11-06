@@ -18,11 +18,11 @@ const addToStoredGadgetList = (id) => {
         console.log(id, ' already exists in the gadget list');
         toast('This gadget is already in your list.');
     } else {
-        gadgetList.push(id); // Corrected variable name
+        gadgetList.push(id); 
         const gadgetListStr = JSON.stringify(gadgetList);
         localStorage.setItem('gadget-List', gadgetListStr); 
         toast('Gadget added to your list!');
     }
 };
 
-export { addToStoredGadgetList, getStoredGadgetList }
+export { addToStoredGadgetList }

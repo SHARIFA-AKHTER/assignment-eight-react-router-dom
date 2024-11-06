@@ -1,5 +1,6 @@
 
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToStoredGadgetList } from '../../Utility/addToDb';
 
 const GadgetDetail = () => {
     const{product_id} = useParams();
@@ -13,15 +14,14 @@ const GadgetDetail = () => {
     const {product_id: currentProduct_id,product_image,
         product_title,price,description,specification,rating} = gadget;
 
-        const handleAddToCard = () =>{
-
-           
+        const handleMarkAsCard = (id) =>{
+           addToStoredGadgetList(id);
         }
 
     return (
 
         <div className="hero bg-base-100 w-[1280px] h-[676px]  j">
-  <div className="hero-content flex-col lg:flex-row mt-32">
+  <div className="hero-content flex-col lg:flex-row ">
     <img
       src={product_image}
       className="max-w-sm rounded-lg shadow-2xl w-72" />
@@ -56,7 +56,7 @@ const GadgetDetail = () => {
   
       
     <div>
-    <button onClick={handleAddToCard} className="btn  rounded-full
+    <button onClick={() =>handleMarkAsCard(product_id)} className="btn  rounded-full
              bg-[#9538E2] text-white mr-4">
                 Add to Card
                 <i class="fa-solid fa-cart-shopping"></i>

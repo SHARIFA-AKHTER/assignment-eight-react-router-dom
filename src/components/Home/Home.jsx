@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Gadgets from '../Gatgets/Gadgets';
-import Explore from '../Explore/Explore';
+
 
 const Home = () => {
     return (
@@ -10,7 +10,6 @@ const Home = () => {
             
             <Gadgets></Gadgets>
 
-            <Explore></Explore>
         </div>
     );
 };
