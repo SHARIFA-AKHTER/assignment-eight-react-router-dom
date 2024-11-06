@@ -18,7 +18,7 @@ const ListedGadgets = () => {
 
         console.log(storedGadgetList, allGadgets, storedGadgetListInt)
 
-        setGadgetList(storedGadgetList);
+        setGadgetList(gadgetList);
 
     },[])
     return (
