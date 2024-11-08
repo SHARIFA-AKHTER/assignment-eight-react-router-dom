@@ -4,12 +4,14 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     const links = <>
-     <li><NavLink to={"/"}>Home</NavLink></li>
+    <div className='flex justify-center gap-6'>
+    <li><NavLink to={"/"}>Home</NavLink></li>
      <li><NavLink to={"/statistics"}>Statistics</NavLink></li>
      <li><NavLink to={"/listedGadgets"}> Dashboard</NavLink></li>
 
+    </div>
      <div> 
-     <li className='gap-8 ml-4'>
+     <li className='gap-8 ml-4 '>
         <NavLink>
         <i class="fa-solid fa-cart-shopping"></i>
        <span className="bg-red-400 rounded-full px-2 py-1 ml-6 text-xs ">
@@ -27,7 +29,7 @@ const Navbar = () => {
         flex justify-center items-center mx-auto p-8 ">
         <div className="navbar-start  ">
           
-          <a className="btn btn-ghost text-xl">GadgetHaven</a>
+          <a className="flex items-center text-xl">GadgetHaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
