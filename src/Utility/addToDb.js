@@ -11,6 +11,12 @@ const getStoredGadgetList = () => {
     }
 };
 
+export const removeFromDb = (productId) => {
+    const storedGadgetList = getStoredGadgetList();
+    const updatedList = storedGadgetList.filter(id => id !== productId);
+    localStorage.setItem('gadgetList', JSON.stringify(updatedList)); // or use whatever key you're storing gadgets with
+};
+
 const addToStoredGadgetList = (id) => {
     const gadgetList = getStoredGadgetList();
     if (gadgetList.includes(id)) {

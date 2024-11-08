@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { getStoredGadgetList } from '../../Utility/addToDb';
+import { getStoredGadgetList, removeFromDb } from '../../Utility/addToDb';  // Assuming removeFromDb is a function to remove an item from local storage
 import Gadget from '../Gadget/Gadget';
 
 const ListedGadgets = () => {
@@ -38,6 +38,20 @@ const ListedGadgets = () => {
         setShowModal(false);
     };
 
+    // Handle Delete Gadget
+    const handleDelete = (productId) => {
+        // Remove from gadget list
+        const updatedGadgetList = gadgetList.filter(gadget => gadget.product_id !== productId);
+        setGadgetList(updatedGadgetList);
+
+        // Update local storage
+        removeFromDb(productId);
+
+        // Recalculate total price
+        const newTotalPrice = updatedGadgetList.reduce((sum, gadget) => sum + gadget.price, 0);
+        setTotalPrice(newTotalPrice);
+    };
+
     return (
         <div>
             <h3 className="text-3xl my-8 ml-44 mt-10">Cart</h3>
@@ -61,7 +75,15 @@ const ListedGadgets = () => {
                 <TabPanel>
                     <h2 className='text-2xl'>Total Items: {gadgetList.length}</h2>
                     {gadgetList.map(gadget => (
-                        <Gadget key={gadget.product_id} gadget={gadget} />
+                        <div key={gadget.product_id} className="flex justify-between items-center mb-4">
+                            <Gadget gadget={gadget} />
+                            <button
+                                onClick={() => handleDelete(gadget.product_id)}
+                                className="btn bg-red-500 text-white ml-4"
+                            >
+                                Delete
+                            </button>
+                        </div>
                     ))}
                 </TabPanel>
                 <TabPanel>
