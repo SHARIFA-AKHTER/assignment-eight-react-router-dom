@@ -32,13 +32,11 @@ const Gadgets = () => {
       }
        
     return (
-
        
-        <div className=' flex-grow flex justify-center items-center mt-8'>
+        <div className=' flex-grow flex justify-center
+         items-center mt-8'>
 
-         <div className='flex space-x-6 mb-6  m-6  '>
-        
-         
+         <div className='flex space-x-6 mb-6  m-6'>      
         <div className='flex flex-col items-center
          bg-slate-100 space-y-4 py-4 w-[240px] h-[556px] m-8 '>
         <button
