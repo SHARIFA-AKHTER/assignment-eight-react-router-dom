@@ -1,10 +1,13 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Gadgets from '../Gatgets/Gadgets';
+ import Gadgets from '../Gatgets/Gadgets';
 import ExploreCut from '../ExploreCut/ExploreCut';
+import { Outlet } from 'react-router-dom';
+import GadgetHeaven from '../GadgetHeaven/GadgetHeaven';
 
 
 const Home = () => {
+   
     return (
         <div>
          
@@ -12,12 +15,15 @@ const Home = () => {
                 
           </Banner>
 
-          <ExploreCut></ExploreCut>
+          <ExploreCut>
+
+          </ExploreCut>
          
-            <Gadgets>
+             <Gadgets>
            
             </Gadgets>
-           
+            
+            <GadgetHeaven></GadgetHeaven>
 
         </div>
     );

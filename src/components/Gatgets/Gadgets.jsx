@@ -7,6 +7,7 @@ const Gadgets = () => {
     const[filteredGadgets,setFilteredGadgets] = useState([]);
     const[category,setCategory] = useState('all');
   
+    
     useEffect(() => {
         fetch('./gadgetsData.json')
         .then((res) => res.json())
