@@ -1,16 +1,19 @@
-
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
 
-    const links = <>
-    <div className='flex justify-center gap-6'>
-    <li><NavLink to={"/"}>Home</NavLink></li>
-     <li><NavLink to={"/statistics"}>Statistics</NavLink></li>
-     <li><NavLink to={"/listedGadgets"}> Dashboard</NavLink></li>
+  
+  const navbarBgColor = location.pathname === '/' ? 'bg-[#9538E2] ' : 'bg-[#9538E2]';
 
-    </div>
-     <div> 
+  const links = (
+    <>
+      <div className="flex justify-center space-x-8">
+        <li><NavLink to={"/"}>Home</NavLink></li>
+        <li><NavLink to={"/statistics"}>Statistics</NavLink></li>
+        <li><NavLink to={"/listedGadgets"}>Dashboard</NavLink></li>
+      </div>
+      <div> 
      <li className='gap-8 ml-4 '>
         <NavLink>
         <i class="fa-solid fa-cart-shopping"></i>
@@ -22,23 +25,23 @@ const Navbar = () => {
      </li>
      </div>
     </>
+  );
 
-    
-    return (
-        <div className="navbar bg-[#9538E2] w-[1540px]  h-[110px]
-        flex justify-center items-center mx-auto p-8 ">
-        <div className="navbar-start  ">
-          
-          <a className="flex items-center text-xl">GadgetHaven</a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {links}
-          </ul>
-        </div>
-       
+  return (
+    <div className={`navbar ${navbarBgColor}  max-w-[1540px] w-full h-[110px]  flex justify-center items-center mx-auto px-4`}>
+      {/* Navbar Logo */}
+      <div className="navbar-start">
+        <a className="text-xl font-bold text-white">GadgetHaven</a>
       </div>
-    );
+
+      {/* Centered Links */}
+      <div className="navbar-center flex justify-center items-center">
+        <ul className="menu menu-horizontal flex justify-center items-center px-1">
+          {links}
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
