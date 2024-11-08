@@ -33,10 +33,7 @@ const Gadgets = () => {
     return (
 
        
-        <div className='mt-72 flex-grow flex justify-center items-center '>
-        <h1 className="text-4xl m-32 text-[#9538E2] ">
-            Explore Cutting-Edge Gadgets 
-            
+        <div className=' flex-grow flex justify-center items-center mt-8'>
 
          <div className='flex space-x-6 mb-6  m-6  '>
         
@@ -92,7 +89,7 @@ const Gadgets = () => {
        </div>
        
        </div>
-       </h1> 
+      
        </div>
       
         

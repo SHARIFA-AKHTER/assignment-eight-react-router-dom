@@ -6,7 +6,9 @@ import Navbar from "../NavBar/Navbar";
 const Root = () => {
     return (
         <div className="flex flex-col min-h-[calc(100vh-232px)] ">
-            <Navbar></Navbar>
+            <Navbar>
+
+            </Navbar>
          
            <Outlet></Outlet>
             <Footer></Footer>

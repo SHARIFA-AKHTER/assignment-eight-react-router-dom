@@ -83,11 +83,14 @@ Navigate to the Project Directory:
 
 
 cd GadgetHeaven
-Install Dependencies:
+Install Dependencies:cd GadgetHeaven
 
 
-npm install
-Run the Application:
+
+npm install:npm install
+
+Run the Application:npm start
+
 
 
 npm start
